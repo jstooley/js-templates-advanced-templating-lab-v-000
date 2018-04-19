@@ -37,9 +37,9 @@
      </script>
    <!-- Recipe Template -->
    <script id="recipe-template" type="text/x-handlebars-template">
-     <h2>{{name}}</h2>
-     {{> recipeDetailsPartial }}
-     <a href="displayEditForm();">Edit Recipe</a>
+     <form id="recipe-form" onsubmit="{{submitAction}};return false;">
+        {{> recipeFormPartial }}
+      </form>
    </script>
 
    <!-- Recipe Details Partial -->
